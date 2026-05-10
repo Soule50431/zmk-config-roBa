@@ -100,7 +100,7 @@
 &kp LCTRL         &mo 1  &mo 6  &mt_to_layer_0 LEFT_ALT LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &kp BACKSPACE  &mt RIGHT_COMMAND ENTER                               &kp RIGHT_ALT
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         FUNCTION {
