@@ -150,12 +150,12 @@
         default_layer {
             bindings = <
 &kp Q                             &kp W                        &kp E                           &kp R                               &kp T                                                   &kp Y      &kp U                                &kp I                            &kp O                        &kp P
-&mt_exit_AML_on_tap LEFT_SHIFT A  &mt_exit_AML_on_tap LCTRL S  &mt_exit_AML_on_tap LEFT_ALT D  &mt_exit_AML_on_tap LEFT_COMMAND F  &kp G        &kp ESCAPE                  &kp MINUS      &kp H      &mt_exit_AML_on_tap RIGHT_COMMAND J  &mt_exit_AML_on_tap RIGHT_ALT K  &mt_exit_AML_on_tap RCTRL L  &mt_exit_AML_on_tap RIGHT_SHIFT SEMICOLON
+&mt_exit_AML_on_tap LEFT_SHIFT A  &mt_exit_AML_on_tap LCTRL S  &mt_exit_AML_on_tap LEFT_ALT D  &mt_exit_AML_on_tap LEFT_COMMAND F  &kp G        &kp LG(N0)                  &kp MINUS      &kp H      &mt_exit_AML_on_tap RIGHT_COMMAND J  &mt_exit_AML_on_tap RIGHT_ALT K  &mt_exit_AML_on_tap RCTRL L  &mt_exit_AML_on_tap RIGHT_SHIFT SEMICOLON
 &kp Z                             &kp X                        &kp C                           &kp V                               &kp B        &kp LBKT                    &kp RBKT       &kp N      &lt 5 M                              &kp COMMA                        &kp DOT                      &kp SLASH
 &mo 1                             &trans                       &mo 6                           &mt_to_layer_0 LEFT_ALT LANG2       &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &kp BACKSPACE  &kp ENTER                                                                                                     &kp DELETE
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
         };
 
         FUNCTION {
@@ -169,10 +169,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                                &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS                                              &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&mt_exit_AML_on_tap LEFT_SHIFT KP_N0     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp EQUAL  &kp SINGLE_QUOTE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mt_exit_AML_on_tap RIGHT_SHIFT NUMBER_0
-&mt_exit_AML_on_tap LEFT_SHIFT KP_SLASH  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PERIOD    &kp EQUAL                    &trans     &kp BACKSLASH     &kp N7        &kp N8        &kp N9        &kp RIGHT_SHIFT
-&trans                                   &trans           &trans           &trans           &trans        &trans                       &trans     &trans                                                      &trans
+&kp MINUS                                &kp KP_NUMBER_1                        &kp KP_NUMBER_2                           &kp KP_NUMBER_3                               &kp PLUS                                              &kp GRAVE         &kp NUMBER_1                          &kp NUMBER_2                      &kp NUMBER_3                                &trans
+&mt_exit_AML_on_tap LEFT_SHIFT KP_N0     &mt_exit_AML_on_tap LCTRL KP_NUMBER_4  &mt_exit_AML_on_tap LEFT_ALT KP_NUMBER_5  &mt_exit_AML_on_tap LEFT_COMMAND KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp EQUAL  &kp SINGLE_QUOTE  &mt_exit_AML_on_tap RIGHT_COMMAND N4  &mt_exit_AML_on_tap RIGHT_ALT N5  &mt_exit_AML_on_tap RIGHT_CONTROL NUMBER_6  &mt_exit_AML_on_tap RIGHT_SHIFT NUMBER_0
+&mt_exit_AML_on_tap LEFT_SHIFT KP_SLASH  &kp KP_NUMBER_7                        &kp KP_NUMBER_8                           &kp KP_NUMBER_9                               &kp PERIOD    &kp EQUAL                    &trans     &kp BACKSLASH     &kp N7                                &kp N8                            &kp N9                                      &kp RIGHT_SHIFT
+&trans                                   &trans                                 &trans                                    &trans                                        &trans        &trans                       &trans     &trans                                                                                                                                &trans
             >;
         };
 
